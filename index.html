@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>MariaGSA</title>
+</head>
+<body>
+    <h1>Curso de JavaScript DOM</h1>
+
+    <div class="cursos-youtube">
+        <h2 id="t-cursos"> Practica con DOM</h2>
+        <p class="parrf">
+            En la realización de este ejercicio, se utlizo la creacion
+            de eventos, 
+        </p>
+        <p class="parrf">
+            donde los eventos son las formas de controlar 
+            acciones en la pagina web.
+        </p>
+        <p class="parrf">
+            Con la propiedad .addEventListener, registra un evento en
+            un objeto específico 
+        </p>
+    </div>
+
+    <!-- <input type="button" value="guadar" onclick="mensaje_uno()" id="mensaje"> -->
+
+    <div class="transparente">
+       <!--  <h2>Contacto</h2> -->
+        <form method="POST" action="#" class="formulario"> 
+            <legend>Contacto </legend>
+
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" class="text-input" required id="txtNombre" placeholder="Nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="txtTelefono">Teléfono</label>
+                    <input type="tel" class="text-input" required id="txtTelefono" placeholder="Teléfono">
+                     <!--se pone el id, para poder referencia a la etiqueta con el control input-->
+                </div>
+                
+                
+                <div class="campo">
+                    <label for="txtEmail">Email</label>
+                    <input type="email" class="text-input" required id="txtEmail" placeholder="Email">
+                </div>
+
+                <div class="campo">
+                    <label for="txtMensaje">Mensaje</label>
+                    <textarea name="txtMensaje" class="text-input" required id="txtMensaje" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+
+          <div class="enviar">
+              <input type="submit" required class="boton" value="ENVIAR" id="mensaje">
+             <!--  <button>Enviar</button> --> <!--Para comentarizar es shift + alt + A-->
+          </div>
+
+       </form>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
